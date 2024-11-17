@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Positiva FM</title>
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div id="wb_Shape1" style="position:absolute;left:58px;top:0px;width:561px;height:25px;z-index:0;">
+<img src="images/img0001.png" id="Shape1" alt="" width="561" height="25" style="width:561px;height:25px;"></div>
+<hr id="HorizontalLine1" style="position:absolute;left:535px;top:54px;width:110px;z-index:1;">
+<hr id="HorizontalLine2" style="position:absolute;left:34px;top:54px;width:110px;z-index:2;">
+<div id="wb_MediaPlayer1" style="position:absolute;left:223px;top:152px;width:230px;height:59px;z-index:3;">
+<audio id="MediaPlayer1" autoplay controls>
+<source src="https://stm37.srvstm.com:6888/stream">
+</audio>
+</div>
+<div id="Html2" style="position:absolute;left:110px;top:4px;width:456px;height:14px;z-index:4">
+<div id="date-time" style="text-align: center; font-size: 1.2em; color: #FFFFFF;"></div>
+<script>
+    function updateDateTime() {
+        const now = new Date();
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const date = now.toLocaleDateString('pt-BR', options);
+        const time = now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+        document.getElementById('date-time').innerHTML = `${date}, ${time}`;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+</div>
+<div id="Html3" style="position:absolute;left:223px;top:54px;width:230px;height:19px;z-index:5">
+<div style="display: flex; gap: 10px; justify-content: center;">
+    <a href="https://api.whatsapp.com/send/?phone=5524999936696&text&app_absent=0" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/128/13051/13051741.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://www.instagram.com/positivafm95/" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://www.facebook.com/positivafm95/" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://x.com/radiopositivafm/" target="_blank" title="Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="Twitter" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://www.youtube.com/@topangra" target="_blank" title="YouTube">
+        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="YouTube" style="width: 40px; height: 40px;">
+    </a>
+    <a href="https://radiopositivafm.com.br/" target="_blank" title="Website">
+        <img src="https://cdn-icons-png.flaticon.com/128/3308/3308395.png" alt="Website" style="width: 40px; height: 40px;">
+    </a>
+</div>
+</div>
+<div id="wb_Text1" style="position:absolute;left:230px;top:95px;width:217px;height:21px;text-align:center;z-index:6;">
+<span style="color:#4169E1;font-family:Arial;font-size:29px;"><strong>POSITIVA FM</strong></span></div>
+<div id="Html1" style="position:absolute;left:45px;top:238px;width:587px;height:79px;z-index:7">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade de Programação da Rádio</title>
+  </head>
+<body>
+     <!-- Div para exibir o programa atual -->
+  <div id="current-program">Programa atual: Nenhum programa no momento</div>
+<div class="programacao-container">
+  <div class="tabs">
+    <div class="tab" onclick="openTab(event, 'Domingo')">Domingo</div>
+    <div class="tab" onclick="openTab(event, 'Segunda')">Segunda</div>
+    <div class="tab" onclick="openTab(event, 'Terça')">Terça</div>
+    <div class="tab" onclick="openTab(event, 'Quarta')">Quarta</div>
+    <div class="tab" onclick="openTab(event, 'Quinta')">Quinta</div>
+    <div class="tab" onclick="openTab(event, 'Sexta')">Sexta</div>
+    <div class="tab" onclick="openTab(event, 'Sábado')">Sábado</div>
+  </div>
+
+  <!-- Conteúdo das abas, conforme o exemplo original -->
+  <div id="Segunda" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>06:00</td><td>MANHÃ POSITIVA</td><td>Viny Gomes</td></tr>
+      <tr><td>08:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>12:00</td><td>SELEÇÃO BRASIL</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>13:00</td><td>RADIO CONTROLE</td><td>Gilson Silva</td></tr>
+      <tr><td>15:00</td><td>PROGRAMA DU FARIA</td><td>Flávio Faria</td></tr>
+      <tr><td>18:00</td><td>PARADÃO SERTANEJO</td><td>Viny Gomes</td></tr>
+      <tr><td>20:00</td><td>SACOLEJO</td><td>Zareta Jr</td></tr>
+      <tr><td>22:00</td><td>ESTAÇÃO DEZ</td><td>Zareta Jr</td></tr>
+    </table>
+  </div>
+  
+  <!-- Conteúdo das abas, conforme o exemplo original -->
+  <div id="Segunda" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>06:00</td><td>MANHÃ POSITIVA</td><td>Viny Gomes</td></tr>
+      <tr><td>08:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>12:00</td><td>SELEÇÃO BRASIL</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>13:00</td><td>RADIO CONTROLE</td><td>Gilson Silva</td></tr>
+      <tr><td>15:00</td><td>PROGRAMA DU FARIA</td><td>Flávio Faria</td></tr>
+      <tr><td>18:00</td><td>PARADÃO SERTANEJO</td><td>Viny Gomes</td></tr>
+      <tr><td>20:00</td><td>SACOLEJO</td><td>Zareta Jr</td></tr>
+      <tr><td>22:00</td><td>ESTAÇÃO DEZ</td><td>Zareta Jr</td></tr>
+    </table>
+  </div>
+  
+  <div id="Terça" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>06:00</td><td>MANHÃ POSITIVA</td><td>Viny Gomes</td></tr>
+      <tr><td>08:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>12:00</td><td>SELEÇÃO BRASIL</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>13:00</td><td>RADIO CONTROLE</td><td>Gilson Silva</td></tr>
+      <tr><td>15:00</td><td>PROGRAMA DU FARIA</td><td>Flávio Faria</td></tr>
+      <tr><td>18:00</td><td>PARADÃO SERTANEJO</td><td>Viny Gomes</td></tr>
+      <tr><td>20:00</td><td>SACOLEJO</td><td>Zareta Jr</td></tr>
+      <tr><td>22:00</td><td>ESTAÇÃO DEZ</td><td>Zareta Jr</td></tr>
+    </table>
+  </div>
+  
+  <div id="Quarta" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>06:00</td><td>MANHÃ POSITIVA</td><td>Viny Gomes</td></tr>
+      <tr><td>08:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>12:00</td><td>SELEÇÃO BRASIL</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>13:00</td><td>RADIO CONTROLE</td><td>Gilson Silva</td></tr>
+      <tr><td>15:00</td><td>PROGRAMA DU FARIA</td><td>Flávio Faria</td></tr>
+      <tr><td>18:00</td><td>PARADÃO SERTANEJO</td><td>Viny Gomes</td></tr>
+      <tr><td>20:00</td><td>SACOLEJO</td><td>Zareta Jr</td></tr>
+      <tr><td>22:00</td><td>ESTAÇÃO DEZ</td><td>Zareta Jr</td></tr>
+    </table>
+  </div>
+  
+  <div id="Quinta" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>06:00</td><td>MANHÃ POSITIVA</td><td>Viny Gomes</td></tr>
+      <tr><td>08:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>12:00</td><td>SELEÇÃO BRASIL</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>13:00</td><td>RADIO CONTROLE</td><td>Gilson Silva</td></tr>
+      <tr><td>15:00</td><td>PROGRAMA DU FARIA</td><td>Flávio Faria</td></tr>
+      <tr><td>18:00</td><td>PARADÃO SERTANEJO</td><td>Viny Gomes</td></tr>
+      <tr><td>20:00</td><td>SACOLEJO</td><td>Zareta Jr</td></tr>
+      <tr><td>22:00</td><td>ESTAÇÃO DEZ</td><td>Zareta Jr</td></tr>
+    </table>
+  </div>
+  
+  <div id="Sexta" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>06:00</td><td>MANHÃ POSITIVA</td><td>Viny Gomes</td></tr>
+      <tr><td>08:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>12:00</td><td>SELEÇÃO BRASIL</td><td>Cristiano Ferreira</td></tr>
+      <tr><td>13:00</td><td>RADIO CONTROLE</td><td>Gilson Silva</td></tr>
+      <tr><td>15:00</td><td>PROGRAMA DU FARIA</td><td>Flávio Faria</td></tr>
+      <tr><td>18:00</td><td>PARADÃO SERTANEJO</td><td>Viny Gomes</td></tr>
+      <tr><td>20:00</td><td>VERSÕES AO VIVO</td><td>Zareta</td></tr>
+    </table>
+  </div>
+  
+  <div id="Sábado" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>05:30</td><td>Sertão na Cidade</td><td>Aderbal Teixeira</td></tr>
+      <tr><td>08:00</td><td>ESPECIAL ROBERTO CARLOS</td><td>Viny Gomes</td></tr>
+      <tr><td>09:00</td><td>SABADÃO SHOW</td><td>Marco Aurélio</td></tr>
+      <tr><td>10:00</td><td>PAINEL DE CONTROLE</td><td></td></tr>
+      <tr><td>13:00</td><td>PROGRAMAÇÃO NORMAL</td><td></td></tr>
+      <tr><td>14:00</td><td>TARDE TOTAL</td><td></td></tr>
+      <tr><td>16:00</td><td>ENERGIA POSITIVA</td><td></td></tr>
+      <tr><td>18:00</td><td>VERSÕES AO VIVO</td><td>Zareta</td></tr>
+      <tr><td>20:00</td><td>FOLIA POSITIVA</td><td>Zareta</td></tr>
+    </table>
+  </div>
+  
+  <div id="Domingo" class="tab-content"> 
+    <table>
+      <tr><th>Horário</th><th>Programa</th><th>Apresentador</th></tr>
+      <tr><td>05:30</td><td>SERTÃO NA CIDADE</td><td>Aderbal Teixeira</td></tr>
+      <tr><td>08:00</td><td>ALÔ BOM DIA</td><td>Gilson Silva</td></tr>
+      <tr><td>09:00</td><td>SACOLEJO</td><td>Zareta</td></tr>
+      <tr><td>11:00</td><td>ANGRA NA ONDA</td><td>Marcus Megga</td></tr>
+      <tr><td>13:00</td><td>PROGRAMAÇÃO NORMAL</td><td> </td></tr>
+      <tr><td>14:00</td><td>BAILÃO 90</td><td>Zareta</td></tr>
+      <tr><td>18:00</td><td>RADIO CONTROLE</td><td>Zareta</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<script>
+  function openTab(event, tabName) {
+    const tabs = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove("active");
+    }
+    document.getElementById(tabName).classList.add("active");
+
+    const tabButtons = document.getElementsByClassName("tab");
+    for (let i = 0; i < tabButtons.length; i++) {
+      tabButtons[i].classList.remove("active");
+    }
+    if (event) {
+      event.currentTarget.classList.add("active");
+    }
+  }
+
+  function highlightCurrentProgram() {
+    const daysOfWeek = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    const now = new Date();
+    const currentDay = daysOfWeek[now.getDay()];
+    const currentTime = now.getHours() * 100 + now.getMinutes();
+    
+    openTab(null, currentDay);
+    const currentTab = document.getElementById(currentDay);
+    if (!currentTab) return;
+
+    const rows = currentTab.getElementsByTagName("tr");
+    let currentProgramInfo = "Nenhum programa no momento";
+    
+    for (let i = 1; i < rows.length; i++) {
+      const timeCell = rows[i].cells[0];
+      const timeParts = timeCell.textContent.split(":");
+      const programTime = parseInt(timeParts[0]) * 100 + parseInt(timeParts[1]);
+      
+      if (programTime <= currentTime && (i === rows.length - 1 || 
+         parseInt(rows[i + 1].cells[0].textContent.replace(":", "")) > currentTime)) {
+        rows[i].classList.add("highlight");
+
+        // Obtem o horário, programa e apresentador para exibir na página
+        const horario = rows[i].cells[0].textContent;
+        const programa = rows[i].cells[1].textContent;
+        const apresentador = rows[i].cells[2].textContent;
+        
+        currentProgramInfo = `Horário: ${horario}<br>Programa: ${programa}<br>Apresentador: ${apresentador}`;
+        break;
+      }
+    }
+    
+    // Exibe o programa atual na div "current-program"
+    document.getElementById("current-program").innerHTML = `Programa atual:<br>${currentProgramInfo}`;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    highlightCurrentProgram();
+  });
+</script>
+
+</body>
+</html>
+</div>
+<div id="wb_Shape2" style="position:absolute;left:167px;top:25px;width:342px;height:20px;z-index:8;">
+<img src="images/img0002.png" id="Shape2" alt="" width="342" height="20" style="width:342px;height:20px;"></div>
+</body>
+</html>
